@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import Button from "../src/components/Button";
 
@@ -7,7 +8,7 @@ export default function Page() {
       <div className="flex flex-col gap-2">
         <h1>button basic state</h1>
         <div className="flex gap-2">
-          <Button variant="primary" onPress={()=>alert('Primary button pressed!')}>Primary</Button>
+          <Button variant="primary" onPress={()=>alert('Primary button pressed!')} >Primary</Button>
           <Button variant="secondary">Secondary </Button>
           <Button variant="success">Success</Button>
           <Button variant="link">
